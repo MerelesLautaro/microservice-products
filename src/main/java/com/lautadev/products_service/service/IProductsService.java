@@ -10,4 +10,5 @@ public interface IProductsService {
     public Products findProduct(Long id);
     public void deleteProduct(Long id);
     public void editProduct(Long id, Products products);
+    public List<Products> findProductsByIds(List<Long> idProducts);
 }

@@ -41,4 +41,9 @@ public class ProductsController {
         return productServ.findProduct(products.getCode());
     }
 
+    @GetMapping("/findProductsByIds")
+    public List<Products> findProductsByIds(@RequestParam List<Long> idProducts){
+        return productServ.findProductsByIds(idProducts);
+    }
+
 }
